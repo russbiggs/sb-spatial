@@ -1,0 +1,27 @@
+{
+    "name": "usgs-spatial",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel src -d build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "babel": {
+        "presets": [
+            "latest"
+        ]
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "node-fetch": "^1.7.3",
+        "shapefile": "^0.6.6"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-latest": "^6.24.1",
+        "browserify": "^15.2.0"
+    }
+}
