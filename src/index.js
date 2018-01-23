@@ -14,12 +14,12 @@ function callApi(query, callback) {
     });
 }
 
-function* featureGen(feats, yieldFunc, callback) {
+function* featureGen(feats, callback) {
     let i = 0
     let features = feats;
     while (i < features.length) {
         let geometry = features[i].geometry;
-        yield yieldFunc(JSON.stringify(geometry), callback);
+        yield callApi(JSON.stringify(geometry), callback);
         i++;
     }
 }
