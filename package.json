@@ -16,8 +16,6 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "node-fetch": "^1.7.3",
-        "shapefile": "^0.6.6"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",

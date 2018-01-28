@@ -9,7 +9,7 @@ function callApi(query, callback) {
             body += data;
         });
         res.on('end', () => {
-            callback(JSON.parse(body))
+            callback(null, JSON.parse(body))
         });
     });
 }
